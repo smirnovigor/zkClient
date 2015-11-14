@@ -1,0 +1,205 @@
+{
+    "ch_version": 6,
+    "cpu": {
+        "avg_01": 0.0,
+        "avg_05": 0.02,
+        "avg_15": 0.05,
+        "busy": 0.1,
+        "idle": 99.9,
+        "nice": 0.0,
+        "system": 0.1,
+        "user": 0.0,
+        "wait": 0.0
+    },
+    "host": "rodriguez.localdomain",
+    "kernel": "4.2.0-m1fs-00608-g2114fdd",
+    "memory": {
+        "available": 5901004,
+        "free": 5110252,
+        "swapped": 0,
+        "total": 6071040
+    },
+    "mounts": {
+        "mount_00": {
+            "available_blocks": 9888656,
+            "device": "/dev/mapper/fedora-root",
+            "free_blocks": 17113492,
+            "free_inodes": 118522,
+            "index": 0,
+            "inodes": 1091296,
+            "mount_point": "/",
+            "options": "rw,relatime,data=ordered",
+            "type": "ext4",
+            "uid": "d8d30d0c-6c2d-11e5-bb62-525400619ff9",
+            "used_blocks": 6439196,
+            "used_blocks_ratio": 40,
+            "used_inodes": 972774,
+            "used_inodes_ratio": 11
+        },
+        "mount_01": {
+            "available_blocks": 3035516,
+            "device": "tmpfs",
+            "free_blocks": 3035520,
+            "free_inodes": 8,
+            "index": 1,
+            "inodes": 758880,
+            "mount_point": "/tmp",
+            "options": "rw",
+            "type": "tmpfs",
+            "uid": "d8d3da8e-6c2d-11e5-bb62-525400619ff9",
+            "used_blocks": 4,
+            "used_blocks_ratio": 1,
+            "used_inodes": 758872,
+            "used_inodes_ratio": 1
+        },
+        "mount_02": {
+            "available_blocks": 8388604,
+            "device": "/dev/pmem0",
+            "free_blocks": 8388608,
+            "free_inodes": 2,
+            "index": 2,
+            "inodes": 4186080,
+            "m1fs": {
+                "clean_pages_hi_mark": 64,
+                "clean_pages_per_q": 1638,
+                "create": 0,
+                "fallocate": 0,
+                "fsync": 0,
+                "link": 0,
+                "locked_clean_page": 0,
+                "lookup": 4,
+                "lru": 0,
+                "lru_0": 0,
+                "lru_1": 0,
+                "mi_queue": 30,
+                "miss_rate": 0,
+                "mkdir": 0,
+                "mknod": 0,
+                "mmap": 0,
+                "mmap_faults": 0,
+                "mmap_private": 0,
+                "mmap_shared": 0,
+                "q_free": 131070,
+                "q_free_0": 65534,
+                "q_free_1": 65536,
+                "q_out": 0,
+                "q_out_0": 0,
+                "q_out_1": 0,
+                "read_4k": 0,
+                "read_4k_to_8k": 0,
+                "read_gt_8k": 0,
+                "read_lt_4k": 0,
+                "reads": 0,
+                "rename": 0,
+                "rmdir": 0,
+                "seek": 0,
+                "setattr": 0,
+                "setsize": 0,
+                "symlink": 0,
+                "t1_hits": 0,
+                "tier_downs": 0,
+                "tier_ups": 0,
+                "unlink": 0,
+                "wait_for_io": 0,
+                "write_4k": 0,
+                "write_4k_to_8k": 0,
+                "write_gt_8k": 0,
+                "write_lt_4k": 0,
+                "writes": 0
+            },
+            "mount_point": "/mnt/m1fs",
+            "options": "rw,relatime,t2sync=0,t2=/dev/sda",
+            "type": "m1fs",
+            "uid": "d8d49a96-6c2d-11e5-bb62-525400619ff9",
+            "used_blocks": 4,
+            "used_blocks_ratio": 1,
+            "used_inodes": 4186078,
+            "used_inodes_ratio": 1
+        }
+    },
+    "network": {
+        "rx_kbs": 0,
+        "total_kbs": 0,
+        "tx_kbs": 0
+    },
+    "numa": {
+        "nodes": {
+            "0": {
+                "cpus": "0 1 2 3",
+                "free": "4460 MB",
+                "mem": "4934 MB"
+            },
+            "1": {
+                "cpus": "4 5 6 7",
+                "free": "530 MB",
+                "mem": "994 MB"
+            }
+        }
+    },
+    "pmem": {
+        "mapping": "512M@6400M",
+        "pmem_devices": [
+            "/dev/pmem0"
+        ]
+    },
+    "procs": [
+        {
+            "cmd": "/bin/python /root/devel/m1fsnode/callhome/cha.py --dry --count=2 --log_data --sleep 5",
+            "cpu": 0.3,
+            "user": "root"
+        },
+        {
+            "cmd": "top -cbn 2+",
+            "cpu": 0.3,
+            "user": "root"
+        },
+        {
+            "cmd": "/usr/lib/systemd/systemd --switched-root --system --deserialize 23",
+            "cpu": 0.0,
+            "user": "root"
+        },
+        {
+            "cmd": "[kthreadd]",
+            "cpu": 0.0,
+            "user": "root"
+        },
+        {
+            "cmd": "[ksoftirqd/0]",
+            "cpu": 0.0,
+            "user": "root"
+        },
+        {
+            "cmd": "[kworker/0:0H]",
+            "cpu": 0.0,
+            "user": "root"
+        },
+        {
+            "cmd": "[kworker/u16:0]",
+            "cpu": 0.0,
+            "user": "root"
+        },
+        {
+            "cmd": "[kworker/u17:0]",
+            "cpu": 0.0,
+            "user": "root"
+        },
+        {
+            "cmd": "[rcu_sched]",
+            "cpu": 0.0,
+            "user": "root"
+        },
+        {
+            "cmd": "[rcu_bh]",
+            "cpu": 0.0,
+            "user": "root"
+        }
+    ],
+    "tasks": {
+        "running": 1,
+        "sleeping": 156,
+        "stopped": 0,
+        "total": 157,
+        "zombies": 0
+    },
+    "uptime": "9 days, 1:38"
+}
